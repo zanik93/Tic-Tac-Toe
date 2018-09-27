@@ -40,6 +40,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.resetScoreboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,7 +49,7 @@
             this.x_win_countlbl = new System.Windows.Forms.Label();
             this.draw_countlbl = new System.Windows.Forms.Label();
             this.o_win_countlbl = new System.Windows.Forms.Label();
-            this.resetScoreboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newGameToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -163,7 +164,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.fileToolStripMenuItem,
+            this.newGameToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(281, 24);
@@ -183,14 +185,20 @@
             // newGameToolStripMenuItem
             // 
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.newGameToolStripMenuItem.Text = "New Game";
-            this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
+            // 
+            // resetScoreboardToolStripMenuItem
+            // 
+            this.resetScoreboardToolStripMenuItem.Name = "resetScoreboardToolStripMenuItem";
+            this.resetScoreboardToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.resetScoreboardToolStripMenuItem.Text = "Reset Scoreboard";
+            this.resetScoreboardToolStripMenuItem.Click += new System.EventHandler(this.resetScoreboardToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -270,12 +278,12 @@
             this.o_win_countlbl.TabIndex = 16;
             this.o_win_countlbl.Text = "0";
             // 
-            // resetScoreboardToolStripMenuItem
+            // newGameToolStripMenuItem1
             // 
-            this.resetScoreboardToolStripMenuItem.Name = "resetScoreboardToolStripMenuItem";
-            this.resetScoreboardToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.resetScoreboardToolStripMenuItem.Text = "Reset Scoreboard";
-            this.resetScoreboardToolStripMenuItem.Click += new System.EventHandler(this.resetScoreboardToolStripMenuItem_Click);
+            this.newGameToolStripMenuItem1.Name = "newGameToolStripMenuItem1";
+            this.newGameToolStripMenuItem1.Size = new System.Drawing.Size(77, 20);
+            this.newGameToolStripMenuItem1.Text = "New Game";
+            this.newGameToolStripMenuItem1.Click += new System.EventHandler(this.newGameToolStripMenuItem1_Click);
             // 
             // Form1
             // 
@@ -301,7 +309,10 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(297, 372);
+            this.MinimumSize = new System.Drawing.Size(297, 372);
             this.Name = "Form1";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tic Tac Toe";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -335,6 +346,7 @@
         private System.Windows.Forms.Label draw_countlbl;
         private System.Windows.Forms.Label o_win_countlbl;
         private System.Windows.Forms.ToolStripMenuItem resetScoreboardToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newGameToolStripMenuItem1;
     }
 }
 

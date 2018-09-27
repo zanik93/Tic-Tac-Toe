@@ -31,7 +31,7 @@ namespace TicTacToe
             label3.Text = Player2;
         }
 
-        public static void SetPlayerNames(string playerOne, string playerTwo)
+        public static void SetPlayerNames(string playerOne, string playerTwo) //Setting the names of the players
         {
             Player1 = playerOne;
             Player2 = playerTwo;
@@ -148,21 +148,21 @@ namespace TicTacToe
             }
         }
 
-        private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Turn = true;
-            TurnCount = 0;
+        //private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    Turn = true;
+        //    TurnCount = 0;
 
-            foreach (Control c in Controls)
-            {
-                if (c.GetType() == typeof(Button))
-                {
-                    Button b = (Button)c;
-                    b.Enabled = true;
-                    b.Text = "";
-                }
-            }
-        }
+        //    foreach (Control c in Controls)
+        //    {
+        //        if (c.GetType() == typeof(Button))
+        //        {
+        //            Button b = (Button)c;
+        //            b.Enabled = true;
+        //            b.Text = "";
+        //        }
+        //    }
+        //}
 
         private void button_enter(object sender, EventArgs e) // Showing who's turn it is.
         {
@@ -189,11 +189,29 @@ namespace TicTacToe
             }
         }
 
+        private void newGameToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Turn = true;
+            TurnCount = 0;
+
+            foreach (Control c in Controls)
+            {
+                if (c.GetType() == typeof(Button))
+                {
+                    Button b = (Button)c;
+                    b.Enabled = true;
+                    b.Text = "";
+                }
+            }
+        }
+
         private void resetScoreboardToolStripMenuItem_Click(object sender, EventArgs e)
         {
             o_win_countlbl.Text = "0";
             x_win_countlbl.Text = "0";
             draw_countlbl.Text = "0";
         }
+
+
     }
 }
