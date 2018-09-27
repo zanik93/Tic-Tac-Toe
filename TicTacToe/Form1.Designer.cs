@@ -48,6 +48,7 @@
             this.x_win_countlbl = new System.Windows.Forms.Label();
             this.draw_countlbl = new System.Windows.Forms.Label();
             this.o_win_countlbl = new System.Windows.Forms.Label();
+            this.resetScoreboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -173,6 +174,7 @@
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newGameToolStripMenuItem,
+            this.resetScoreboardToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
@@ -181,14 +183,14 @@
             // newGameToolStripMenuItem
             // 
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newGameToolStripMenuItem.Text = "New Game";
             this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -197,10 +199,13 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(12, 281);
+            this.label1.MaximumSize = new System.Drawing.Size(96, 15);
+            this.label1.MinimumSize = new System.Drawing.Size(96, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 15);
             this.label1.TabIndex = 10;
             this.label1.Text = "X\'s Win Count";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -217,10 +222,13 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.Location = new System.Drawing.Point(171, 281);
+            this.label3.MaximumSize = new System.Drawing.Size(97, 15);
+            this.label3.MinimumSize = new System.Drawing.Size(97, 15);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 15);
             this.label3.TabIndex = 12;
             this.label3.Text = "O\'s Win Count";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
@@ -261,6 +269,13 @@
             this.o_win_countlbl.Size = new System.Drawing.Size(15, 15);
             this.o_win_countlbl.TabIndex = 16;
             this.o_win_countlbl.Text = "0";
+            // 
+            // resetScoreboardToolStripMenuItem
+            // 
+            this.resetScoreboardToolStripMenuItem.Name = "resetScoreboardToolStripMenuItem";
+            this.resetScoreboardToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.resetScoreboardToolStripMenuItem.Text = "Reset Scoreboard";
+            this.resetScoreboardToolStripMenuItem.Click += new System.EventHandler(this.resetScoreboardToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -319,6 +334,7 @@
         private System.Windows.Forms.Label x_win_countlbl;
         private System.Windows.Forms.Label draw_countlbl;
         private System.Windows.Forms.Label o_win_countlbl;
+        private System.Windows.Forms.ToolStripMenuItem resetScoreboardToolStripMenuItem;
     }
 }
 
