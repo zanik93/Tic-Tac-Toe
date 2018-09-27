@@ -14,7 +14,8 @@ namespace TicTacToe
     {
         bool Turn = true; // true = X's turn, false = O's turn
         int TurnCount = 0;
-        static string Player1, Player2;
+        static string Player1 = "Player One";
+        static string Player2 = "Player Two";
 
 
         public Form1()
@@ -27,8 +28,18 @@ namespace TicTacToe
             Form2 f = new Form2();
             f.ShowDialog();
 
-            label1.Text = Player1;
-            label3.Text = Player2;
+
+            //if((Player1 == "") || (Player2 == "") || (f.IsDisposed))
+            //{
+            //    label1.Text = "Player One";
+            //    label3.Text = "Player Two";
+            //}
+            //else
+            //{
+                label1.Text = Player1;
+                label3.Text = Player2;
+            //}
+
         }
 
         public static void SetPlayerNames(string playerOne, string playerTwo) //Setting the names of the players
@@ -148,21 +159,6 @@ namespace TicTacToe
             }
         }
 
-        //private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    Turn = true;
-        //    TurnCount = 0;
-
-        //    foreach (Control c in Controls)
-        //    {
-        //        if (c.GetType() == typeof(Button))
-        //        {
-        //            Button b = (Button)c;
-        //            b.Enabled = true;
-        //            b.Text = "";
-        //        }
-        //    }
-        //}
 
         private void button_enter(object sender, EventArgs e) // Showing who's turn it is.
         {

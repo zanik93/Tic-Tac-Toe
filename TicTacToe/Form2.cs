@@ -30,5 +30,10 @@ namespace TicTacToe
                 play_btn.PerformClick();
             }
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
