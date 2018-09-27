@@ -41,6 +41,13 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.x_win_countlbl = new System.Windows.Forms.Label();
+            this.draw_countlbl = new System.Windows.Forms.Label();
+            this.o_win_countlbl = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -185,11 +192,88 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(12, 281);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 15);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "X\'s Win Count";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(114, 281);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 15);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Draws";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(171, 281);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(97, 15);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "O\'s Win Count";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(76, 254);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(125, 18);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "SCOREBOARD";
+            // 
+            // x_win_countlbl
+            // 
+            this.x_win_countlbl.AutoSize = true;
+            this.x_win_countlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.x_win_countlbl.Location = new System.Drawing.Point(46, 309);
+            this.x_win_countlbl.Name = "x_win_countlbl";
+            this.x_win_countlbl.Size = new System.Drawing.Size(15, 15);
+            this.x_win_countlbl.TabIndex = 14;
+            this.x_win_countlbl.Text = "0";
+            // 
+            // draw_countlbl
+            // 
+            this.draw_countlbl.AutoSize = true;
+            this.draw_countlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.draw_countlbl.Location = new System.Drawing.Point(128, 309);
+            this.draw_countlbl.Name = "draw_countlbl";
+            this.draw_countlbl.Size = new System.Drawing.Size(15, 15);
+            this.draw_countlbl.TabIndex = 15;
+            this.draw_countlbl.Text = "0";
+            // 
+            // o_win_countlbl
+            // 
+            this.o_win_countlbl.AutoSize = true;
+            this.o_win_countlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.o_win_countlbl.Location = new System.Drawing.Point(210, 309);
+            this.o_win_countlbl.Name = "o_win_countlbl";
+            this.o_win_countlbl.Size = new System.Drawing.Size(15, 15);
+            this.o_win_countlbl.TabIndex = 16;
+            this.o_win_countlbl.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(281, 270);
+            this.ClientSize = new System.Drawing.Size(281, 333);
+            this.Controls.Add(this.o_win_countlbl);
+            this.Controls.Add(this.draw_countlbl);
+            this.Controls.Add(this.x_win_countlbl);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.C3btn);
             this.Controls.Add(this.C2btn);
             this.Controls.Add(this.C1btn);
@@ -228,6 +312,13 @@
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newGameToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label x_win_countlbl;
+        private System.Windows.Forms.Label draw_countlbl;
+        private System.Windows.Forms.Label o_win_countlbl;
     }
 }
 
