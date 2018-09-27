@@ -14,8 +14,8 @@ namespace TicTacToe
     {
         bool Turn = true; // true = X's turn, false = O's turn
         int TurnCount = 0;
-        static string Player1 = "Player One";
-        static string Player2 = "Player Two";
+        static string Player1, Player2;
+        
 
 
         public Form1()
@@ -28,18 +28,16 @@ namespace TicTacToe
             Form2 f = new Form2();
             f.ShowDialog();
 
-
-            //if((Player1 == "") || (Player2 == "") || (f.IsDisposed))
-            //{
-            //    label1.Text = "Player One";
-            //    label3.Text = "Player Two";
-            //}
-            //else
-            //{
+            if(!string.IsNullOrEmpty(Player1)) // Adding default names if the player names are left empty.
+            {
                 label1.Text = Player1;
                 label3.Text = Player2;
-            //}
-
+            }
+            else
+            {
+                label1.Text = Player1 = "Player One";
+                label3.Text = Player2 = "Player Two";
+            }
         }
 
         public static void SetPlayerNames(string playerOne, string playerTwo) //Setting the names of the players
